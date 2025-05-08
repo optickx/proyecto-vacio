@@ -4,11 +4,16 @@ esqueleto de directorios y archivos de configuración. en un equipo con composer
 
 ## ejecución
 
-comandos
+primero de todo, asegurate de tener una base de datos creada, xampp, puerto 3306. que los valores coincidan con los del archivo `.env`
 
-- `composer install`: 
-- `php artisan serve`: código fuente en html
+comandos:
+- `composer install`
+- `php artisan key:generate`
+- `php artisan migrate`
+- `php artisan db:seed` (opcional)
+- `php artisan serve`
+- 
 
-si fueramos a ejecutarlo desde 0, el comando sería
+si fueramos a ejecutarlo desde 0, el primer comando sería
 - `composer create-project laravel/laravel [proyecto]`: código javascript de la página
 
